@@ -1,0 +1,27 @@
+{
+  "name": "phok-platform",
+  "version": "1.0.0",
+  "description": "PHOK Platform is a Drupal 8 based distribution.",
+  "main": "web/index.php",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PreventHIVOK/platform.git"
+  },
+  "keywords": [
+    "Drupal",
+    "distribution",
+    "CMS"
+  ],
+  "author": "Curtis Blumer <curtis.blumer@gmail.com>",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/PreventHIVOK/platform/issues"
+  },
+  "homepage": "https://github.com/PreventHIVOK/platform#readme"
+}

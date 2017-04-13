@@ -1,0 +1,25 @@
+# Composer - Ignore vendor files
+/vendor/*
+
+# Drupal 8 - Ignore contrib files
+/web/*.*
+/web/autoload.php
+/web/core
+/web/libraries/**/*
+/web/modules/contrib
+/web/themes/contrib
+/drush/contrib
+/console/cache
+
+/web/sites/example.*
+/web/sites/*.local.*
+/web/sites/*/default.*
+/web/sites/*/files
+
+# Drupal 8 - Do not ignore custom files.
+!/web/libraries/*.*
+!/web/modules/*.*
+!/web/modules/custom
+!/web/profiles
+!/web/themes/*.*
+!/web/themes/custom

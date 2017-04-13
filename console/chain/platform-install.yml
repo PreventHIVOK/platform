@@ -1,0 +1,41 @@
+commands:
+# Install Drupal 8
+  - command: site:install
+    options:
+      langcode: 'en'
+      #db-type: '%{{db_type|mysql}}'
+      #db-host: '%{{db_host|127.0.0.1}}'
+      #db-name: '%{{db_name|drupal}}'
+      #db-user: '%{{db_user|}}'
+      #db-pass: '%{{db_pass}}'
+      #db-port: '%{{db_port|3306}}'
+      site-name: 'Prevent HIV Oklahoma'
+      site-mail: 'do-not-reply@preventhivok.org'  # site email
+      account-name: 'root'                        # admin account
+      account-mail: 'site-admin@preventhivok.org' # admin email
+      account-pass: 'mpc74XX@121ba'               # admin pass
+      uri: 'http://default'
+      learning: false
+    arguments:
+      profile: 'minimal'
+  # Install Admin Toolbar Extras
+  - command: module:install
+    arguments:
+      module: admin_toolbar_tools
+    options:
+      uri: 'http://default'
+      learning: false
+  # Install Configuration Inspector
+  - command: module:install
+    arguments:
+      module: config_inspector
+    options:
+      uri: 'http://default'
+      learning: false
+  # Install Field UI
+  - command: module:install
+    arguments:
+      module: field_ui
+    options:
+      uri: 'http://default'
+      learning: false
